@@ -1,0 +1,19 @@
+trigger:
+- master
+- develop
+- release/*
+- feature/*
+- hotfix/*
+
+pool:
+    vmImage: 'ubuntu-latest'
+
+jobs:
+- job: AgentJobMain
+  displayName: Agent job - Main
+  steps:
+  - script: |
+      pip install pre-commit
+      pre-commit --version
+      pre-commit run --all-files
+    displayName: Execute pre-commit
