@@ -11,4 +11,4 @@ jobs:
     runs-on: "ubuntu-latest"
     steps:
       # Dockerfile:      
-      - uses: Azure4DevOps/check-azure-bicep@v0.1.0
+      - uses: Azure4DevOps/check-azure-bicep@v0.2.1
