@@ -13,7 +13,7 @@ param storageAccountType string = 'Standard_LRS'
 param instLocation array = [
   'westeurope'
 ]
-
+asdasdasd
 param instName array = [
   'euw'
 ]
