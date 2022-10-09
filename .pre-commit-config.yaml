@@ -4,3 +4,5 @@ repos:
     hooks:
       - id: check-azure-bicep
       - id: check-azure-bicep-python
+      - id: check-azure-bicep-format
+      - id: check-azure-bicep-format-python
