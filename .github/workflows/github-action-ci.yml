@@ -1,3 +1,4 @@
+
 name: CI-Example
 
 on:
@@ -20,7 +21,11 @@ jobs:
         with:      
           python-version: '3.10'
       - name: Run a multi-line script
-        run: |
+        run: |          
+          pip install --force-reinstall -v "azure-mgmt-rdbms==10.2.0b17"
           pip install pre-commit
           pre-commit --version
           pre-commit run --all-files
+
+# pip install --force-reinstall -v "azure-mgmt-rdbms==10.2.0b17"
+# temporary fix for dependecy https://github.com/Azure/azure-cli/issues/30102 
